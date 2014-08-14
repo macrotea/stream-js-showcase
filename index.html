@@ -1,0 +1,16 @@
+<!DOCTYPE html> <html lang="en">
+<head> <meta charset="utf-8"> <title>基于QUnit的测试页</title> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="description" content=""> <meta name="author" content=""> <!--fav--> <link rel="shortcut icon" href="resources/images/app/fav.ico" type="image/x-icon"> <link rel="icon" href="resources/images/app/fav.ico" type="image/x-icon"> <!--css--> <link href="resources/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> <link href="resources/vendor/qunit/qunit-1.15.0.css" rel="stylesheet"> <link href="index.css" rel="stylesheet"> </head>
+<body>
+
+    <div class="container-fluid"> <div class="row"> <div class="col-md-12"> <!--QUnit需要提供的HTML代码--> <div id="qunit"></div> <div id="qunit-fixture"></div> </div> </div> <!--删除hidden提供基础页面骨架--> <div class="row hidden"> <div class="col-md-12"> <div class="well"><p> <h4 id="tip">努力,世界就再眼前</h4> </p> </div> <table class="table table-hover"> <thead> <tr> <th>编号</th> <th>用户名</th> <th>邮箱</th> <th>年龄</th> </tr> </thead> <tbody> <tr> <td><span class="badge">1</span></td> <td>Mark</td> <td>macrotea@qq.com</td> <td>23</td> </tr> <tr> <td><span class="badge">2</span></td> <td>Mark</td> <td>macrotea@qq.com</td> <td>23</td> </tr> <tr> <td><span class="badge">3</span></td> <td>Mark</td> <td>macrotea@qq.com</td> <td>23</td> </tr> </tbody> </table> </div> </div> </div> <!--[if lt IE 9]> <script src="resources/js/html5shiv.js"></script> <script src="resources/js/respond.min.js"></script> <![endif]--> <script src="resources/js/jquery/jquery.1.10.2.js"></script> <script src="resources/vendor/bootstrap/js/bootstrap.min.js"></script> <script src="resources/js/ie10-viewport-bug-workaround.js"></script>
+
+    <!--需被测试的类库-->
+    <script src=""></script>
+
+    <!--测试类库-->
+    <script src="resources/vendor/qunit/qunit-1.15.0.js"></script>
+
+    <!--测试代码-->
+    <script src="index.js"></script>
+
+</body> </html>
